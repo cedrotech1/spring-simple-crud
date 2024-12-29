@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "target/*.jar",
+        "use": "@vercel/static-build",
+        "config": { "distDir": "target" }
+      }
+    ],
+    "routes": [
+      { "src": "/.*", "dest": "/spring-simple-crud.jar" }
+    ]
+  }
+  
